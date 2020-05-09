@@ -74,6 +74,9 @@ namespace TesteTailorIT.Application.UseCases.Funcionario.Base
 
         public async Task GetById(int id, IOutputPort<FuncionarioResponse> outputPort)
         {
+            if (!await Exists(id, outputPort))
+                return;
+
             var funcionario = await _funcionarioRepository.GetFuncionarioById(id);
 
             if (funcionario != null)

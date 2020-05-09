@@ -58,6 +58,70 @@ namespace TesteTailorIT.Infra.Data.DataSample
                         new HabilidadeModel{ Id = 3, Descricao = "Angular"},
                     }
                 },
+
+                new FuncionarioModel
+                {
+                    Nome = "Mafis Santos",
+                    Email ="email@email.com",
+                    Sexo = "F",
+                    DataNascimento = new DateTime(1990,03,19),
+                    Habilidades = new List<HabilidadeModel>()
+                    {
+                        new HabilidadeModel{Id = 1, Descricao = "C#"},
+                        new HabilidadeModel{ Id = 3, Descricao = "Angular"},
+                        new HabilidadeModel{ Id = 4, Descricao = "SQL"},
+                    }
+                },
+
+                new FuncionarioModel
+                {
+                    Nome = "Kiazoama Carvalho",
+                    Email ="email@email.com",
+                    Sexo = "F",
+                    DataNascimento = new DateTime(1990,03,19),
+                    Habilidades = new List<HabilidadeModel>()
+                    {
+                        new HabilidadeModel{Id = 1, Descricao = "C#"},
+                        new HabilidadeModel{ Id = 3, Descricao = "Angular"},
+                        new HabilidadeModel{ Id = 5, Descricao = "ASP"},
+                    }
+                },
+
+                new FuncionarioModel
+                {
+                    Nome = "Niheso Fernandes",
+                    Email ="email@email.com",
+                    Sexo = "M",
+                    DataNascimento = new DateTime(1990,03,19),
+                    Habilidades = new List<HabilidadeModel>()
+                    {
+                        new HabilidadeModel{Id = 1, Descricao = "C#"},
+                    }
+                },
+
+                new FuncionarioModel
+                {
+                    Nome = "Ryael Oliveira",
+                    Email ="email@email.com",
+                    Sexo = "M",
+                    DataNascimento = new DateTime(1990,03,19),
+                    Habilidades = new List<HabilidadeModel>()
+                    {
+                        new HabilidadeModel{Id = 1, Descricao = "C#"},
+                    }
+                },
+
+                new FuncionarioModel
+                {
+                    Nome = "Naihe Hamada",
+                    Email ="email@email.com",
+                    Sexo = "F",
+                    DataNascimento = new DateTime(1990,03,19),
+                    Habilidades = new List<HabilidadeModel>()
+                    {
+                        new HabilidadeModel{ Id = 5, Descricao = "ASP"},
+                    }
+                },
             };
 
             context.AddRange(habilidades);
