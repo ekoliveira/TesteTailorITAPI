@@ -1,53 +1,96 @@
-﻿//using AutoMapper;
-//using AutoMapper.Configuration;
-//using Microsoft.EntityFrameworkCore;
-//using System;
-//using System.Collections.Generic;
-//using TesteTailorIT.Infra.CrossCutting.AutoMapper;
-//using TesteTailorIT.Infra.Data.Models;
-//using TesteTailorIT.Infra.Data.Repositories;
+﻿using AutoMapper;
+using AutoMapper.Configuration;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using TesteTailorIT.Domain.Models;
+using TesteTailorIT.Infra.CrossCutting.AutoMapper;
+using TesteTailorIT.Infra.Data.Models;
+using TesteTailorIT.Infra.Data.Repositories;
 
-//namespace TesteTailorIT.Test
-//{
-//    public class CarregarBancoInMemory
-//    {
-//        private IMapper mapper;
+namespace TesteTailorIT.Test
+{
+    public class CarregarBancoInMemory
+    {
+        private IMapper mapper;
 
-//        public CarregarBancoInMemory()
-//        {
-//            var config = new MapperConfigurationExpression();
-//            config.ForAllMaps((map, expression) =>
-//            {
-//                foreach (var unmappedPropertyName in map.GetUnmappedPropertyNames())
-//                    expression.ForMember(unmappedPropertyName,
-//                        configurationExpression => configurationExpression.Ignore());
-//            });
+        public CarregarBancoInMemory()
+        {
+            var config = new MapperConfigurationExpression();
+            config.ForAllMaps((map, expression) =>
+            {
+                foreach (var unmappedPropertyName in map.GetUnmappedPropertyNames())
+                    expression.ForMember(unmappedPropertyName,
+                        configurationExpression => configurationExpression.Ignore());
+            });
 
-//            config.AddProfiles(typeof(ApplicationProfile).Assembly);
+            config.AddProfiles(typeof(ApplicationProfile).Assembly);
 
-//            var mapperConfig = new MapperConfiguration(config);
-//            mapper = new Mapper(mapperConfig);
-//        }
+            var mapperConfig = new MapperConfiguration(config);
+            mapper = new Mapper(mapperConfig);
+        }
 
-//        public FuncionarioRepository DataInMemory()
-//        {
-//            var options = new DbContextOptionsBuilder<FuncionarioRepository>()
-//                .EnableSensitiveDataLogging()
-//                .UseInMemoryDatabase(Guid
-//                .NewGuid().ToString()).Options;
+        public FuncionarioRepository DataInMemory()
+        {
+            var options = new DbContextOptionsBuilder<FuncionarioRepository>()
+                .EnableSensitiveDataLogging()
+                .UseInMemoryDatabase(Guid
+                .NewGuid().ToString()).Options;
 
-//            var context = new FuncionarioRepository(options, mapper);
+            var context = new FuncionarioRepository(options, mapper);
 
-//            context.Funcionario.AddRange(new List<FuncionarioDataModel>()
-//            {
-//                new FuncionarioDataModel{Id =1, Nome = "Erick Henrique de Oliveira", Cpf="44243792801", Rg="460743181", DataNascimento= new DateTime(1994,03,19)},
-//                new FuncionarioDataModel{Id =2, Nome = "Paulo Rodrigo de Oliveira", Cpf="52406000079", Rg="195756551", DataNascimento= new DateTime(1990,11,19)},
-//                new FuncionarioDataModel{Id =3, Nome = "Maria de Fatima Santos Oliveira", Cpf="72711992098", Rg="371240955", DataNascimento= new DateTime(1969,07,01)},
-//            });
+            var habilidades = new HabilidadeDataModel[]
+            {
+                new HabilidadeDataModel{ Descricao = "C#"},
+                new HabilidadeDataModel{ Descricao = "Java"},
+                new HabilidadeDataModel{ Descricao = "Angular"},
+                new HabilidadeDataModel{ Descricao = "SQL"},
+                new HabilidadeDataModel{ Descricao = "ASP"},
+            };
 
-//            context.SaveChanges();
+            var funcionarios = new FuncionarioModel[]
+            {
+                new FuncionarioModel
+                {
+                    Id = 1,
+                    Nome = "Erick Henrique de Oliveira",
+                    Email ="email@email.com",
+                    Sexo = "M",
+                    DataNascimento = new DateTime(1994,03,19),
+                    Habilidades = new List<HabilidadeModel>()
+                    {
+                        new HabilidadeModel{ Id = 1, Descricao = "C#"},
+                        new HabilidadeModel{ Id = 2, Descricao = "Java"},
+                        new HabilidadeModel{ Id = 3, Descricao = "Angular"},
+                        new HabilidadeModel{ Id = 4, Descricao = "SQL"},
+                        new HabilidadeModel{ Id = 5, Descricao = "ASP"},
+                    }
+                },
 
-//            return context;
-//        }
-//    }
-//}
+                new FuncionarioModel
+                {
+                    Id = 2,
+                    Nome = "Claudia Carvalho dos Santos",
+                    Email ="email@email.com",
+                    Sexo = "F",
+                    DataNascimento = new DateTime(1990,03,19),
+                    Habilidades = new List<HabilidadeModel>()
+                    {
+                        new HabilidadeModel{Id = 1, Descricao = "C#"},
+                        new HabilidadeModel{ Id = 3, Descricao = "Angular"},
+                    }
+                },
+            };
+
+            context.AddRange(habilidades);
+            context.SaveChanges();
+
+            foreach (var item in funcionarios)
+            {
+                context.InsertFuncionario(item);
+            }
+
+            return context;
+        }
+    }
+}

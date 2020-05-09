@@ -43,6 +43,11 @@ namespace TesteTailorIT.Infra.Data.Repositories
         {
             var funcionario = _mapper.Map<FuncionarioModel>(await Funcionario.FindAsync(id));
 
+            if(funcionario == null)
+            {
+                throw new EntityNotFoundException("Entidade não encontrada!");
+            }
+
             var habilidadesList = new List<HabilidadeModel>();
 
             var funcionarioHabilidades = await FuncionarioHabilidade.ToListAsync();
