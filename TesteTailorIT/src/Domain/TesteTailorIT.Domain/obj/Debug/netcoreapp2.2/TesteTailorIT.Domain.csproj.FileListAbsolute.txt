@@ -1,0 +1,17 @@
+C:\Dev\Teste\TesteYounder\src\Domain\TesteYounder.Domain\bin\Debug\netcoreapp2.2\TesteTailorIT.Domain.deps.json
+C:\Dev\Teste\TesteYounder\src\Domain\TesteYounder.Domain\bin\Debug\netcoreapp2.2\TesteTailorIT.Domain.dll
+C:\Dev\Teste\TesteYounder\src\Domain\TesteYounder.Domain\bin\Debug\netcoreapp2.2\TesteTailorIT.Domain.pdb
+C:\Dev\Teste\TesteYounder\src\Domain\TesteYounder.Domain\obj\Debug\netcoreapp2.2\TesteTailorIT.Domain.csproj.CoreCompileInputs.cache
+C:\Dev\Teste\TesteYounder\src\Domain\TesteYounder.Domain\obj\Debug\netcoreapp2.2\TesteTailorIT.Domain.AssemblyInfoInputs.cache
+C:\Dev\Teste\TesteYounder\src\Domain\TesteYounder.Domain\obj\Debug\netcoreapp2.2\TesteTailorIT.Domain.AssemblyInfo.cs
+C:\Dev\Teste\TesteYounder\src\Domain\TesteYounder.Domain\obj\Debug\netcoreapp2.2\TesteTailorIT.Domain.dll
+C:\Dev\Teste\TesteYounder\src\Domain\TesteYounder.Domain\obj\Debug\netcoreapp2.2\TesteTailorIT.Domain.pdb
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Domain\TesteTailorIT.Domain\bin\Debug\netcoreapp2.2\TesteTailorIT.Domain.deps.json
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Domain\TesteTailorIT.Domain\bin\Debug\netcoreapp2.2\TesteTailorIT.Domain.dll
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Domain\TesteTailorIT.Domain\bin\Debug\netcoreapp2.2\TesteTailorIT.Domain.pdb
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Domain\TesteTailorIT.Domain\obj\Debug\netcoreapp2.2\TesteTailorIT.Domain.csproj.CoreCompileInputs.cache
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Domain\TesteTailorIT.Domain\obj\Debug\netcoreapp2.2\TesteTailorIT.Domain.AssemblyInfoInputs.cache
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Domain\TesteTailorIT.Domain\obj\Debug\netcoreapp2.2\TesteTailorIT.Domain.AssemblyInfo.cs
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Domain\TesteTailorIT.Domain\obj\Debug\netcoreapp2.2\TesteTailorIT.Domain.dll
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Domain\TesteTailorIT.Domain\obj\Debug\netcoreapp2.2\TesteTailorIT.Domain.pdb
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Domain\TesteTailorIT.Domain\obj\Debug\netcoreapp2.2\TesteTailorIT.Domain.csprojAssemblyReference.cache

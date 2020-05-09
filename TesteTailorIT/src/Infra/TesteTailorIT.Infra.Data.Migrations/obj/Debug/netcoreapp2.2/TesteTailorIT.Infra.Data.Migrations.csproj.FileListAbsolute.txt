@@ -1,0 +1,17 @@
+C:\Dev\Teste\TesteYounder\src\Infra\TesteYounder.Infra.Data.Migrations\bin\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.deps.json
+C:\Dev\Teste\TesteYounder\src\Infra\TesteYounder.Infra.Data.Migrations\bin\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.dll
+C:\Dev\Teste\TesteYounder\src\Infra\TesteYounder.Infra.Data.Migrations\bin\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.pdb
+C:\Dev\Teste\TesteYounder\src\Infra\TesteYounder.Infra.Data.Migrations\obj\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.csproj.CoreCompileInputs.cache
+C:\Dev\Teste\TesteYounder\src\Infra\TesteYounder.Infra.Data.Migrations\obj\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.AssemblyInfoInputs.cache
+C:\Dev\Teste\TesteYounder\src\Infra\TesteYounder.Infra.Data.Migrations\obj\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.AssemblyInfo.cs
+C:\Dev\Teste\TesteYounder\src\Infra\TesteYounder.Infra.Data.Migrations\obj\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.dll
+C:\Dev\Teste\TesteYounder\src\Infra\TesteYounder.Infra.Data.Migrations\obj\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.pdb
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Infra\TesteTailorIT.Infra.Data.Migrations\bin\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.deps.json
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Infra\TesteTailorIT.Infra.Data.Migrations\bin\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.dll
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Infra\TesteTailorIT.Infra.Data.Migrations\bin\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.pdb
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Infra\TesteTailorIT.Infra.Data.Migrations\obj\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.csproj.CoreCompileInputs.cache
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Infra\TesteTailorIT.Infra.Data.Migrations\obj\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.AssemblyInfoInputs.cache
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Infra\TesteTailorIT.Infra.Data.Migrations\obj\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.AssemblyInfo.cs
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Infra\TesteTailorIT.Infra.Data.Migrations\obj\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.dll
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Infra\TesteTailorIT.Infra.Data.Migrations\obj\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.pdb
+C:\Dev\TesteTailorIT\TesteTailorIT\src\Infra\TesteTailorIT.Infra.Data.Migrations\obj\Debug\netcoreapp2.2\TesteTailorIT.Infra.Data.Migrations.csprojAssemblyReference.cache
